@@ -7,28 +7,28 @@
     [TestClass]
     public class Class1
     {
-        [AssemblyInitialize]
-        public void MsTestAssemblyInitialize()
-        {
-        }
+        //[AssemblyInitialize]
+        //public void MsTestAssemblyInitialize()
+        //{
+        //}
 
-        [AssemblyCleanup]
-        public void MsTestAssemblyCleanup()
-        {
-        }
+        //[AssemblyCleanup]
+        //public void MsTestAssemblyCleanup()
+        //{
+        //}
 
-        [TestInitialize]
-        public void MsTestTestInitialize()
-        {
-        }
+        //[TestInitialize]
+        //public void MsTestTestInitialize()
+        //{
+        //}
 
-        [TestCleanup]
-        public void MsTestTestCleanup()
-        {
-        }
+        //[TestCleanup]
+        //public void MsTestTestCleanup()
+        //{
+        //}
 
         [TestMethod]
-        [TestCategory("Category")]
+        [TestCategory("Passed")]
         public void NewMethodPassed()
         {
             Console.WriteLine();
@@ -36,7 +36,7 @@
         }
 
         [TestMethod]
-        [TestCategory("Category")]
+        [TestCategory("Failed")]
         public void NewMethodFailed()
         {
             Console.WriteLine();

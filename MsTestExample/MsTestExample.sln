@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestExample", "NUnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestExample", "XUnitTestExample\XUnitTestExample.csproj", "{3C12E935-A0F5-45CF-A76C-28011700826A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringHelper", "StringHelper\StringHelper.csproj", "{87D048A5-CC0C-46EC-BB24-496F1471C445}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3C12E935-A0F5-45CF-A76C-28011700826A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C12E935-A0F5-45CF-A76C-28011700826A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C12E935-A0F5-45CF-A76C-28011700826A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D048A5-CC0C-46EC-BB24-496F1471C445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D048A5-CC0C-46EC-BB24-496F1471C445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D048A5-CC0C-46EC-BB24-496F1471C445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D048A5-CC0C-46EC-BB24-496F1471C445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
