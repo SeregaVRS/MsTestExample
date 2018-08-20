@@ -1,6 +1,7 @@
 :: set the location of mstest - it could be in a few different locations
 :: the default (initial) location is for WinXP machines
-:: E.g. 
+:: E.g. Program Files (x86)\Microsoft Visual Studio {Version}\Common7\IDE\MSTest.exe
+
 @ECHO OFF
 @SET TEST_RUNNER_EXE_NAME=mstest.exe
 @SET TEST_RUNNER_VERSIONS=" 10.0" " 11.0" " 12.0" " 14.0" "\2017\Professional" "\2017\TestAgent" "\2017\Enterprise" "\2017\Community"
@@ -13,5 +14,8 @@
 	)
 ) 	
 )
+
 @ECHO %MSTEST_LOCATION%
+@SET TEST_CONTAINER_PATH="D:\Projects\MsTestExample\MsTestExample\MsTestExample\bin\Release\MsTestExample.dll"
+call %MSTEST_LOCATION% /testcontainer:%TEST_CONTAINER_PATH%
 pause

@@ -17,5 +17,22 @@
 )
 
 @ECHO %VSTEST_LOCATION%
-call %VSTEST_LOCATION% d:\Projects\MsTestExample\MsTestExample\MsTestExample\bin\Release\MsTestExample.dll /Logger:trx
+
+@SET TESTDLL_LOCATION=MsTestExample\MsTestExample\bin\Release\MsTestExample.dll
+@ECHO %TESTDLL_LOCATION% 
+
+@SET REPORT_LOCATION=TestResults\TrxerConsole.exe
+@ECHO %REPORT_LOCATION% 
+
+::for /d %F in (%REPORT_LOCATION%\*) do rd /s /q "%F"
+::del %REPORT_LOCATION%\*.trx
+
+@SET REPORTGENERATOR_LOCATION=TrxerConsole.exe
+@ECHO %REPORTGENERATOR_LOCATION% 
+
+call %VSTEST_LOCATION% %TESTDLL_LOCATION% /Logger:trx
+
+::rename %REPORT_LOCATION%\*.trx %REPORT_LOCATION%\TestResults.trx
+::call %REPORTGENERATOR_LOCATION% %REPORT_LOCATION%\TestResults.trx
+
 pause
